@@ -32,9 +32,13 @@ main {
     width: 100vw;
 }
 
+#intro div {
+    width: auto;
+}
+
 #profilePic {
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    height: auto;
 }
 
 #socials {
@@ -49,8 +53,8 @@ main {
 }
 
 #matrixImage {
-    width: 300px;
-    height: 300px;
+    width: 25%;
+    height: auto;
 }
 
 #about {
