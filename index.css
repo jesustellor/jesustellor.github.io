@@ -36,6 +36,14 @@ main {
     width: auto;
 }
 
+#about {
+    margin: 50px 0 50px 0;
+}
+
+.projects img{
+    width: 100%;
+}
+
 #profilePic {
     width: 25%;
     height: auto;
@@ -66,4 +74,8 @@ main {
 footer {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    
 }
