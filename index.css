@@ -40,6 +40,10 @@ main {
     margin: 50px 0 50px 0;
 }
 
+.projects {
+    margin: 0 25px 0 25px;
+}
+
 .projects img{
     width: 100%;
 }
