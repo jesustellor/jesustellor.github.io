@@ -77,5 +77,22 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-    
+#intro {
+    flex-direction: column;
+}
+#intro img {
+    width: 80%;
+}
+#about {
+    flex-direction: column;
+}
+div.projects {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+#about img {
+    width: 80%;
+}
 }
