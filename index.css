@@ -12,10 +12,17 @@ body {
         "header"
         "main"
         "footer";
-    width: 100vw;
+    width: 100%;
+    background-image: url("images/matrixImage.png");
+    background-size: cover;
+}
+
+header {
+    grid-area: header;
 }
 
 nav {
+    background-color: lightgreen;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -23,61 +30,74 @@ nav {
 
 main {
     grid-area: main;
+    display: flex;
+    flex-direction: column;
 }
 
 #intro {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
+}
+
+#intro img {
+    width: 33%;
 }
 
 #intro div {
-    width: auto;
+    background-color: lightgreen;
+    padding: 10px;
+    opacity: 0.9;
+    height: 30%;
 }
 
-#about {
-    margin: 50px 0 50px 0;
-}
-
-.projects {
-    margin: 0 25px 0 25px;
-    width: 20%;
-}
-
-.projects img{
-    width: 100%;
-}
-
-#profilePic {
-    width: 25%;
-    height: auto;
+#intro div img {
+    width: 30px;
+    height: 30px;
 }
 
 #socials {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-}
-
-#matrixImage {
-    width: 25%;
-    height: auto;
 }
 
 #about {
     display: flex;
     justify-content: space-around;
+    /* border: 1px solid red; */
+    margin: 50px 0;
+}
+
+#about a{
+    width: 25%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: lightgreen;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+#about a:hover{
+    background-color: lightgreen;
+    opacity: 1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about img {
+    width: 100%;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    grid-area: footer;
+}
+
+footer p {
+    background-color: lightgreen;
+    text-align: center;
 }
 
 @media screen and (max-width: 700px) {
@@ -98,5 +118,9 @@ div.projects {
 }
 #about img {
     width: 80%;
+}
+
+#about a{
+    width: 100%;
 }
 }
