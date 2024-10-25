@@ -15,14 +15,14 @@ import * as THREE from 'three';
   const near = 0.1;
   const far = 5;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.z = 1.5;
+  camera.position.z = 2;
 
   const fov2 = 75;
   const aspect2 = window.innerWidth / window.innerHeight;  // the canvas default
   const near2 = 0.1;
   const far2 = 5;
   const camera2 = new THREE.PerspectiveCamera(fov2, aspect2, near2, far2);
-  camera2.position.z = 1;
+  camera2.position.z = 2;
 
   const squareScene = new THREE.Scene();
   const circleScene = new THREE.Scene();
