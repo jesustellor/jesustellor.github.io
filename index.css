@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 105px;
     grid-template-areas:
         "header"
         "main"
@@ -93,11 +93,14 @@ main {
 
 footer {
     grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
     background-color: lightgreen;
-    text-align: center;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 700px) {
