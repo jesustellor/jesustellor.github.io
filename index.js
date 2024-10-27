@@ -15,7 +15,7 @@ import * as THREE from 'three';
   const near = 0.1;
   const far = 5;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-  camera.position.z = 1.5;
+  camera.position.z = 1.3;
 
   const fov2 = 75;
   const aspect2 = window.innerWidth / window.innerHeight;  // the canvas default
