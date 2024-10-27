@@ -106,12 +106,14 @@ footer p {
 @media screen and (max-width: 700px) {
 #intro {
     flex-direction: column;
+    gap: 20px;
 }
 #intro img {
     width: 80%;
 }
 #about {
     flex-direction: column;
+    gap: 40px;
 }
 div.projects {
     display: flex;
