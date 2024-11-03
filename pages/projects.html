@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="matrix.css">
 </head>
 <body>
-    
+    <canvas id="matrix"></canvas>
+
+        <script defer type="importmap">
+        {
+            "imports": {
+                "three": "/node_modules/three/src/Three.js",
+                "three/addons/": "/node_modules/three/examples/jsm"
+            }
+        }
+        </script>
+    <script defer type="module" src="matrix.js"></script>
 </body>
 </html>
