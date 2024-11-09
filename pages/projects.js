@@ -24,10 +24,12 @@ function createProjectCard(title, description, imageUrl, link) {
   document.body.appendChild(card);
 }
 
-// Example usage
-createProjectCard(
-  'Project Title',
-  'This is a description of the project.',
-  '/path/to/image.jpg',
-  'https://github.com/username/project-repo'
-);
+
+for (let i = 0; i < 10; i++) {
+  createProjectCard(
+    'Project Title',
+    'This is a description of the project.',
+    '/path/to/image.jpg',
+    'https://github.com/username/project-repo'
+  );
+}
