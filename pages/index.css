@@ -2,4 +2,15 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
+}
+
+.project-card {
+    background-color: rgba(0, 255, 0, 0.9);
+}
+
+a {
+
+    background-color: rgba(0, 255, 0, 0.9);
+    
 }
