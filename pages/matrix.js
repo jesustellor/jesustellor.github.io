@@ -57,6 +57,16 @@ function animate() {
 
     controls.update();
 
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        // Update Three.js scene here
+        camera.position.z = scrollY * 0.1;
+        camera.position.x = scrollY * 0.01;
+        camera.position.y = scrollY * 0.01;
+
+        // camera.lookAt(new THREE.Vector3(0, 0, camera.position.z));
+    })
+
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -65,3 +75,9 @@ function animate() {
 
 animate();
 
+window.addEventListener('scroll', () => {
+    // Your code to update the Three.js scene based on scroll position
+    // For example, you might want to move the camera or update objects
+    const scrollY = window.scrollY;
+    // Update Three.js scene here
+});
