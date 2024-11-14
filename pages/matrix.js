@@ -14,8 +14,6 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer({canvas});
 
 
-camera.position.setZ(30);
-
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
 const material = new THREE.MeshStandardMaterial({color: 0x00ff00});
 const circle = new THREE.Mesh(geometry, material);
@@ -58,13 +56,16 @@ function animate() {
     controls.update();
 
     window.addEventListener('scroll', () => {
+        console.log(window.scrollY);
         const scrollY = window.scrollY;
         // Update Three.js scene here
-        camera.position.z = scrollY * 0.1;
-        camera.position.x = scrollY * 0.01;
-        camera.position.y = scrollY * 0.01;
+        camera.position.setZ(scrollY * 0.1);
+        camera.position.setX(scrollY * 0.01);
+        camera.position.setY(scrollY * 0.01);
+        // camera.position.z = scrollY * 0.1;
+        // camera.position.x = scrollY * 0.01;
+        // camera.position.y = scrollY * 0.01;
 
-        // camera.lookAt(new THREE.Vector3(0, 0, camera.position.z));
     })
 
     renderer.setPixelRatio(window.devicePixelRatio);
